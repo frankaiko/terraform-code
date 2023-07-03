@@ -1,0 +1,44 @@
+Please I need junior devOPs engineer, terraform, linux, docker resume with 2 year experience
+
+
+[Your Name]
+[Your Contact Information: Phone Number, Email Address]
+[LinkedIn Profile]
+
+Objective:
+Highly motivated and detail-oriented junior DevOps engineer with 2 years of experience in infrastructure automation, cloud deployment, and containerization. Seeking a challenging role where I can contribute my skills in Terraform, Linux, and Docker to streamline development processes and optimize system performance.
+
+Experience:
+Junior DevOps Engineer | ABC Company | [Dates]
+
+Collaborated with cross-functional teams to design and implement infrastructure as code using Terraform, reducing deployment time by 40% and increasing system reliability.
+Managed and maintained cloud environments on AWS, utilizing services such as EC2, S3, RDS, and IAM to ensure scalability and high availability.
+Developed and maintained CI/CD pipelines using Jenkins, Git, and Docker, enabling efficient and automated software releases.
+Implemented containerization using Docker to isolate applications and improve portability across different environments.
+Monitored system performance, identified bottlenecks, and implemented optimizations to enhance application scalability and responsiveness.
+Conducted regular security audits and implemented security best practices to protect infrastructure and data integrity.
+Provided technical support to development teams, troubleshooting issues related to deployment, configuration, and environment setup.
+Documented infrastructure architecture, deployment processes, and troubleshooting guides for knowledge sharing and onboarding new team members.
+Skills:
+
+Proficient in Terraform for infrastructure provisioning and management.
+Strong knowledge of Linux systems administration and shell scripting.
+Experience with containerization technologies such as Docker and Kubernetes.
+Familiarity with cloud platforms like AWS, Azure, or GCP.
+Hands-on experience with CI/CD tools like Jenkins, Git, and GitLab.
+Solid understanding of networking concepts and protocols.
+Ability to troubleshoot and resolve issues in complex distributed systems.
+Strong analytical and problem-solving skills.
+Excellent communication and collaboration skills, with the ability to work effectively in cross-functional teams.
+Education:
+Bachelor's Degree in Computer Science | [University Name] | [Year]
+
+Certifications:
+
+[Relevant Certification 1]
+[Relevant Certification 2]
+Projects:
+
+[List any relevant personal or professional projects that demonstrate your skills in DevOps, Terraform, Linux, and Docker.]
+References:
+Available upon request.

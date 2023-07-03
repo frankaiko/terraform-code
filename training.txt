@@ -1,0 +1,1334 @@
+%%%%%  Welcome to the March 2023 session %%%%%%%%%%%%
+%%%%%%%%%%%%  week1 day1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Intro to class orientation, q and a
+
+**week1 day2
+
+https://chat.openai.com/chat   chatGPT link
+
+** Linux commands
+
+cli
+date    ==> to check the date on the server
+uptime  ==> to check how long the system have been running
+clear   ==> the clear the terminal screen
+free -m ==> check the total memory used and available memory
+pwd     ==> print working directory ( check where you are on the server)
+mkdir   ==> create folders or directories on the system
+ls      ==> list directory content
+touch   ==> create files 
+history ==> check all previous typed commands
+man     ==> manual of command.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% week2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+***** Projects:
+ --NB: You might have to check the materials in week2 to do this project.
+  
+1- create a lightsal server with ssh key and connect to it from your vsc ( visualstudio code)
+sol: check week2 material for power point
+  
+2- Do a complete system inventory of that server.
+sol:
+memory ==> free -m or top
+hard drive ==> lsblk, df -h
+cpu ==> nproc, lscpu, top
+os version ==> cat /etc/os-release  or cat /etc/*release
+kernel ==> uname -r
+
+3- watch a video on youtube about Linus torvald and tell what you think about in the next class
+sol:
+  - introvert
+  - bright
+  - smart
+  - doesnt have people skills 
+  - motivated
+  - blunt
+  
+4- what are some directories found in the / directory
+sol: etc, var, root, bin, sbin, tmp , usr, home, mnt, dev, opt
+
+5- what is the linux architecture
+sol: 
+  
+The Kernel
+System Libraries
+The Shell
+The Hardware Layer
+System Utilites
+  
+6- what are the features of linux 
+ sol:
+    - open source 
+    - free
+    - flexible
+    - secure
+    - user friendly
+    - cant run on any hardware
+    - big online community
+    
+7- build a computer from scratch
+sol:
+  hardware; case, monitor , mouse , keyboard, Nic,  cpu, ram, power supply, heat sink , hard drive, motherboard
+  software: linux
+8- what is the difference between os and app software
+sol:
+  The main difference between OS and application software is that the OS manages the computer's 
+hardware and software, while the application software performs specific tasks for the user. 
+The OS is an essential component of any computer system, whereas application software is 
+optional and depends on the user's needs and preferences.
+ 
+
+  
+**Linux command practice
+uptime
+date
+*System inventory
+lscpu 
+cat /etc/os-release
+nproc
+lsblk
+uname -r
+top
+free -m
+* File and directories
+mkdir 
+touch
+rm 
+rm -r
+cd
+ls
+* Other commands
+pwd
+man
+history
+find
+whoami
+
+project:
+  1- what is linux ?
+Linux is a free and open-source operating system based on the Unix operating system. 
+It was developed in the early 1990s by Linus Torvalds and now has a large community of developers and users. 
+Linux is used on a wide variety of devices, including personal computers, servers, mobile devices, and embedded systems.
+One of the main advantages of Linux is its flexibility and customization. 
+Users and developers can modify and redistribute the source code to create their own versions of the operating system, called distributions or "distros". 
+There are many popular Linux distros, such as Ubuntu, Debian, Fedora, and CentOS, each with its own unique features and strengths.
+Linux is also known for its stability, security, and efficiency. It has a reputation for being less prone to viruses and malware than other operating systems, 
+and it is often used in server environments due to its reliability and performance.
+Overall, Linux is a powerful and versatile operating system that has become an important part of the technology landscape.
+  
+  2- what are the components of linux?
+  
+Linux is composed of several key components that work together to provide the functionality of the operating system. 
+These components include:
+Kernel: The Linux kernel is the core of the operating system. It manages hardware resources, controls system processes, 
+and provides services to applications.
+Shell: The Linux shell is a command-line interface that allows users to interact with the operating system. 
+It is a powerful tool that can be used to perform a wide range of tasks, from basic file management to complex system administration.
+Filesystem: The Linux filesystem is a hierarchical structure that organizes files and directories. It is based on the Unix filesystem and provides a standardized way of accessing and storing data.
+Applications: Linux supports a wide range of applications, including web browsers, office suites, media players, and development tools. Many applications are open source and can be freely downloaded and modified.
+Libraries: Linux includes a large collection of libraries that provide common functionality to applications. These libraries can be used by developers to simplify the development process and make their applications more efficient.
+Utilities: Linux includes a variety of utilities that provide additional functionality, such as text editors, network tools, and system monitoring tools. These utilities are often command-line based and can be used to automate tasks or perform complex operations.
+
+  3- what is cli ?
+  4- what is a shell?
+  5- create an ubuntu server using the lighsail service in aws with below specs:
+    region: n. Virginia
+    platform: linux
+    blueprint: os only
+    os :  ubuntu 18.04
+    key: ubuntu18
+    cpu: 1
+    Memory: 512 MB
+  6- login remotely to the server created in 5 and do a complete inventory.
+  7- create a file called linux_command 
+  8- add 30 linux command in the file linux_command and what they are for.
+  
+        1 date ==> to check the date
+        2 uptime ==> to check how long the server have been up
+        3 whoami ==> to check who is logged in
+        4 cd ==> to change directory
+        5 cp ==> to copy files and directory
+        6 mv ==> to rename a file or move it to a new location
+        7 free ==> to check memory
+        8 touch ==> to create files
+        9 clear ==> to clear the terminal
+       10 top ==> to check cpu, memory, uptime, and all the process running
+       11 uname -r ==> to check the kernel version
+       12 history ==> to check previous typed command
+       13 exit ==> to exit a terminal or a user
+       14 echo ==> to display any message
+       15 sudo ==> to escalate privilege
+       16 mkdir ==> to create folders
+       17 lsblk ==> to check block device or hard drive
+       18 cal ==> to check the calendar
+       19 man ==> to check documentation about specific command
+       20 ls ==> to list directory content
+       21 pwd ==> to check the current working directory
+       22 rm ==> to delete files and directories
+       23 nproc ==> check number of cpu
+       24 ssh ==> use to login to a linux server remotely
+       25 find ==> use to check file or directory path
+       26 vi ==> to edit files
+       27 id ==> to check user's id
+       28 df ==> to check disk utilisation
+       29 lscpu ==> check cpu info 
+       30 cat ==> display file content
+ 9- what is your favorite command in linux and why?
+ 10- what are some linux flavor that you know ?
+ 11- delete the ubuntu server created.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Week3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ **day1:
+  
+project:
+  To install and config apache webserver on a linux machine, we need to follow bellow steps
+for centos:
+
+yum install httpd -y 
+systemctl start httpd
+systemctl status httpd
+systemctl enable httpd
+cd /var/www/html
+touch index.html
+vi index.html 
+<h1>This is my first website </h1>
+go and refresh the browser
+
+
+for ubuntu,debian
+
+apt update
+apt install apache2 -y 
+systemctl start apache2
+systemctl status apache2
+systemctl enable apache2
+
+- test the apache by taking the ip address of your server to the browser
+
+****Day 2
+**Linux commands review
+
+        1 date ==> to check the date
+        2 uptime ==> to check how long the server have been up
+        3 whoami ==> to check who is logged in
+        4 cd ==> to change directory
+        5 cp ==> to copy files and directory
+        6 mv ==> to rename a file or move it to a new location
+        7 free ==> to check memory
+        8 touch ==> to create files
+        9 clear ==> to clear the terminal
+       10 top ==> to check cpu, memory, uptime, and all the process running
+       11 uname -r ==> to check the kernel version
+       12 history ==> to check previous typed command
+       13 exit ==> to exit a terminal or a user
+       14 echo ==> to display any message
+       15 sudo ==> to escalate privilege
+       16 mkdir ==> to create folders
+       17 lsblk ==> to check block device or hard drive
+       18 cal ==> to check the calendar
+       19 man ==> to check documentation about specific command
+       20 ls ==> to list directory content
+       21 pwd ==> to check the current working directory
+       22 rm ==> to delete files and directories
+       23 nproc ==> check number of cpu
+       24 ssh ==> use to login to a linux server remotely 
+       25 find ==> use to check file or directory path
+       26 vi ==> to edit files
+       27 id ==> to check user's id
+       28 df ==> to check disk utilisation
+       29 lscpu ==> check cpu info 
+       30 cat ==> display file content
+       31 more ==> display one page document at the time
+       32 less ==> display one page document at the time
+       33 grep ==> filter strings from file
+       34 wget ==> download file from a url source
+       35 yum, apt, ==> install packages 
+       36 ping ==> check connectivity between two devices.
+       37 systemctl ==> start, stop, restart, enable 
+       36 cat /etc/os-release ==> os type and version 
+   **Other notions 
+       -pipe |  ==> use to separate many commands
+       -redirect and append (> and >> )
+      
+      
+Project:
+  1- what is the osi model?
+  2- what are some problems found on l3 and l1
+  3- what is the difference between TCP and UDP ?
+  4- what is the difference between a hub and a switch?
+  5- what happen when you type geico.com on the browser?
+  6- what is an ip address ?
+  7- what class is the ip 245.0.0.258 ?
+  8- what do you use to edit files in linux ?
+  9- how do you save and quit a file in vi?
+  10- some packages are missing on the system and need to be installed type a command to install them.
+  packages:  docker, java-11-openjdk-devel, net-tools, 
+    
+  11- if a server has an issue, and you need to pull just the lines in the log file with the word error
+  how can you do that?
+  12- how do you create an empty file?
+  13- how do you create an empty directory?
+  15- what are some directories found in the / directory?
+  16- create a file on your system called study.log
+  17- in the file study.log , add 40 commands and what they are for ( dont cheat)
+  18- type a command to display the content of study.log
+  19- How can we display just the 5 last lines of study.log?
+  20-there is a file that need to be downloaded on your server and this is the url to the file 
+  please type a command to download that file.
+  https://github.com/utrains/static-resume/archive/refs/heads/main.zip
+  21- there is a file on your system called yum.log , type a command to display its content.
+  22- install apache and create a symple page that says: 
+    "My name is ..... and this is my site"
+  23- take a backup of the secure file and practice vi on it.
+  
+  
+  ****Group project in class:
+    
+  1- create a linux server using the lightsail service in aws with below specs:
+    region: n. Virginia
+    blueprint: os only
+    os :  centos 7
+    key: week3
+    cpu: 1
+    Memory: 512 MB
+      
+    2- gain root access and to a full inventory of the system:
+      - total memory
+      - number of cpu
+      - os type and version
+      - kernel version
+      - number of hard drive and size
+      - how long the system have been up
+      
+    3- This server is going to be use to host an application and you are in charge of setting it up. there is a
+    document in confluence on how to do it. follow the document and configure your server.
+    confluence page link and credentials to login: 
+      https://dataservicegroup.atlassian.net/l/cp/1BT00SB0
+      username: unixtteam24@gmail.com
+      password: school123
+  
+    4- navigate into the /var/www/html directory and in the index.html file  modify the name Alex Smith ( it is in 3 places in that file ) to your own name 
+    then refresh the browser to see the changes. 
+    
+    5- Take a backup or snapshot of the server so that we dont loose all our changes on the server when we delete it .
+    give the name resume to the snapshot.
+
+**** week4 day1
+
+project:
+  
+  1- create a group called shipping 
+  sol: goupadd shipping
+    
+  2- create a group call cloud
+  sol: groupadd cloud
+    
+  3- create a user henry with subgroup or secondary group cloud
+  sol: useradd -G cloud henry
+    
+  4- create user jacques with no access to an interactive shell
+  sol: useradd -s /sbin/nologin jacques
+    
+  5- create a user for herman with below specs:
+    username: u2023a
+    full name: Herman Smith
+    primary group: shipping 
+    secondary group is cloud
+    shell: /bin/sh
+  
+  sol: 
+    useradd u2023a  -c "Hermann Smith" -g shipping -G cloud -s /bin/sh
+    
+  6-give password redhat to henry and herman
+  
+  sol: passwd henry ( enter redhat twice)
+       passwd u2023a (enter redhat twice)
+      
+  7- create a user adjoko with uid of 6534
+  
+  useradd -u 6534 adjoko
+  
+  *** Enable password authentication on aws servers 
+  
+  vi /etc/ssh/sshd_config
+  systemctl restart sshd
+  
+  create a user for test:
+    useradd u5bt
+    passwd u5bt ( enter abc twice)
+  from a different terminal try to login to your server using the user and password 
+  
+  ssh u5bt@ipaddress
+  yes
+  abc
+  modify 
+  passwordauthentication no to passwordauthentication yes
+  
+  **** week4 day2
+  
+  Files and directories permissions
+
+	a- File and directory access (access denied for some users on some files)
+  
+  b- Check permissions on a file or directory
+  		- Types of permissions (read=r=4, write=w=2, execute=x=1)
+      - categories of users on which the permissions are applied (Owner=u, Group=g, Others=o)
+  
+  rwx
+r = 4
+w = 2
+x = 1
+
+rw-    r--    r--   centos
+owner  group  others
+6      4      4
+
+rwx    rw-    rw-   centos
+owner  group  others
+7      6      6
+
+rw-    ---     ---    centos
+owner  group  others
+6      0      0
+
+chmod 400 keyname 
+
+r--   ---  ---
+
+project:
+
+1- what does the permission 741 means for a file?
+
+sol: 
+  owner: read write execute ( rwx)
+  group: read 
+  other: execute
+2- give to change permission on a file/dir
+chmod
+
+3- we want to change permission on a file as per below access.
+owner: rw
+group: write
+other: no permission
+
+  chmod 620 filename
+  
+4- how do you change the group a file belongs to?
+chgrp
+
+5- we have low file info
+-rwx------. 1 u5bt DevOps 0 May  2 22:45 centos
+what command can we run to add read and write permission to the group
+
+chmod 760 centos
+or
+chmod g+rw
+6- how would change the owner of a file/dir
+
+chown
+
+
+  c- Modify permissions (chmod with letters or numbers)
+  
+  d- Change Ownership 
+  	- change group (chgrp)
+    - Change Owner (chown)
+    - change Owner and Group (chown)
+    
+  e- Special permissions 
+  	- SUID Set User ID = s = 4
+    - SGID Set Group ID = s = 2
+    - Sticky bit = t = 1
+  
+  Projects:
+    NB: walk thru the console , billing, regions, services, documentation.( lightsail, ec2, s3, iam,
+    route53, elb, autoscaling, security group, vpc, rds, sns, cloudwatch, )
+    create groups:
+      read access
+      ec2-access 
+      admin access  
+    1- Create IAM user with Read only access ( add them to group read) to AWS EC2 service
+    2- Create IAm user with Full access ( add them to admin group) to AWS EC2 service
+    3- test the login on console and explain the programatical access.
+    4- Install AWS-CLI
+    5- Configure AWS-CLI in the terminal with an IAM user which has Admin access on AWS
+    6- run some aws cli commands
+    * aws lightsail get-instances  ==> list lightsail instance 
+    * aws iam list-users
+    * aws iam list-groups
+    * aws s3 ls
+    * aws lightsail delete-instance --instance-name server-name
+    
+   
+  Project2 in groups:
+    
+    1- At work , we need a server build. so we need to submit info about this server ( config / build team) to the build team.
+    we already have a server with the exact config needed.
+    go ahead and login to the existing server, and get the info needed for the new server.
+    existing server info:
+      server name : 45.33.119.65
+      username: devuser
+      password: abc
+    
+    we need below info:
+      number of hard drive: 
+        sda     159.5G  
+        sdb    512M
+      hard drive size:
+      os or linux flavor and version: Alpine Linux v3.17
+      kernel version: 5.15.93-0-virt
+      Memory or ram total size: 8g
+      number of cpu's: 4
+      
+  
+    NB: below questions should be done on the same server 45.33.119.65 as well.
+      
+     2- run a command to check if the server is 64 bit or 32 bits
+    arch
+    uname -m 
+    uname -a 
+    getconf LONG_BIT
+    64
+    
+     3- there is a file on that server named cloud-init-output.log it is in the /var/log directory
+      who is the owner of this file?  
+      root
+      what is the permission on that file?
+      644
+      what group does that file belongs to?
+      adm
+     4- the config managment team during a troubleshooting session have asked you provide them with
+    the lines in the cloud-init-output.log file which has the word error. please go ahead and provide that.
+    cd /var/log
+    grep error cloud-init-output.log
+    5- display the content of the file study-plan located in /var/log/sa and read the content displayed.
+    cd /var/log/sa
+    cat study-plan
+    
+  ****** Week5 day1 
+ 
+u5bt:x:1005:1005::/home/u5bt:/bin/bash
+
+print just user's id
+awk -F: '{print$3}' /etc/passwd
+or
+cat /etc/passwd | awk -F: '{print$3}'
+
+  
+
+  Projects1:
+
+1- what is the sed command?
+
+it is a command used to edit file or output
+
+2- what is awk command?
+command in linux used to extract or filter data
+
+3- there is a file on the system call clients.csv it is in /home/devuser that contains client name and info 
+we need just the client's email ( send promotion email). login to that server and run a command to filter just the mails
+server name : 45.33.119.65
+      username: devuser
+      password: abc
+
+login to the server 
+ssh devuser@45.33.119.65
+enter passwd ,
+ls to check the file 
+ awk -F, '{print$4}' clients.csv
+this prints all the emails
+we can also append the email into a file
+awk -F, '{print$4}' clients.csv >> email.txt
+
+4- what is Terraform ?
+it is an open source tool/sofware develop by harshicorp to automate infrastructure.
+the config is writen using the hcl or json syntaxe
+
+
+5- what is IaC ?
+
+IaC stand for infrastructure as code
+the process of automating the creation , update and deletion of infrastructure
+
+6- what problem is terraform solving?
+
+-automation the infrastructure
+- avoid human errors
+- very good for disaster recovery 
+- cost saving
+-save time
+- multiple providers
+
+7- how does terraform works?
+
+terraform read the config file , compare it to the state file and decide from there what needs to be done 
+
+8- what are some benefits of using terraform?
+
+-automation the infrastructure
+- avoid human errors
+- very good for disaster recovery 
+- cost saving
+-save time
+- multiple providers
+- learning curve is relatively easy
+- a lot of community ressources
+- easily portable
+
+9- what is a state file?
+it is a file maintained by terraform and it contain the source of truth for the 
+infrastructure created
+
+a state file is a file that captures the current state or configuration of a system or 
+application. It serves as a snapshot or reference point that can be used for recovery, 
+restoration, or comparison purposes
+
+it is a file used by  IAC tool to record information about what has been deployed by 
+the tool
+NB: we should keep this file very safe
+  
+10- What is a provider in Terraform?
+
+a plugin that lets Terraform manage an external API
+
+a provider is a plugin that enables Terraform to interact with a specific 
+type of infrastructure or service provider.
+
+11- What is a resource in Terraform?
+
+are elements in terraform  that describe one or more infrastructure object
+infrastructure artifacts we deploy to the cloud through terraform.
+
+12-what are these terraform command for?
+- terraform init
+initialize the directory, download plugins base on provider ( aws, azure, google)
+
+- terraform validate
+Teraform validate is to check if the .tf files has an error
+In Terraform, terraform validate is a command used to validate the syntax and configuration 
+of Terraform files.
+
+- terraform fmt
+
+is used to reformat terraform configuration files
+
+- terraform plan
+
+The terraform plan command creates an execution plan,
+road map
+
+- terraform apply
+execute on the plan, apply the plan
+
+- terraform destroy
+
+destroy all the resources that were created by Terraform.
+
+**** Practice
+
+provider "aws" {
+  region = "us-east-1"
+}
+#creating the lightsail instance
+resource "aws_lightsail_instance" "demo" {
+  name              = "my-server-Hossnia"
+  availability_zone = "us-east-1a"
+  blueprint_id      = "ubuntu_20_04"
+  bundle_id         = "nano_1_0"
+  key_pair_name     = "week3"
+  tags = {
+    name = "utrains devops"
+    env  = "dev"
+    owner = "serge"
+  }
+}
+
+
+*** second file 
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "us-east-1"
+}
+#creating the lightsail instance
+resource "aws_lightsail_instance" "demo" {
+  name              = "my-server-Hossnia"
+  availability_zone = "us-east-1a"
+  blueprint_id      = "ubuntu_20_04"
+  bundle_id         = "nano_1_0"
+  key_pair_name     = "week3"
+  tags = {
+    name = "utrains devops"
+    env  = "dev"
+    owner = "serge"
+  }
+}
+
+resource "aws_iam_group" "group1" {
+  name = "terraform"
+}
+
+resource "aws_iam_user" "demo-user" {
+  name = "Prof"
+}
+
+
+%%%%%%%%%%%% week6 day1
+
+206  git init
+  207  git status
+  208  touch server.tf
+  209  git status
+  210  touch instruction.txt
+  211  git status
+  212  ls
+  213  ls -la
+  214  history
+  
+  216  git status
+  217  git add server.tf
+  218  git status
+  219  git commit -m "test"
+  220  git add instruction.txt
+  221  git status
+  222  git commit -m "test2"
+  223  git status
+  224  clear
+  225  history
+223  git status
+  224  clear
+  225  history
+  226  clear
+  227  git status
+  228  git log
+  229  clear
+  230  git status
+  231  git add .
+  232  git status
+  239  git branch
+  240  git branch dev
+  241  git branch
+  242  git checkout dev
+  243  ls
+  244  git branch
+  245  history
+  
+  207  cd ticket1
+  208  git clone https://github.com/kserge2001/git-test.git
+  209  ls
+  210  cd git-test/
+  211  git branch
+  212  git branch ticket1
+  213  git checkout ticket1
+  214  git branch
+  215  touch shell.sh
+  216  git status
+  217  git add .
+  218  git commit -m "new script"
+  219  git push origin ticket1
+  220  history
+  
+  
+**************week6 day2
+** Steps to get all the scripts:
+  
+  
+sudo -i
+yum install git -y 
+git clone https://github.com/utrains/utrains_shell_script.git
+cd utrains_shell_script
+ls
+touch script.sh
+chmod +x script.sh
+vi script.sh
+
+#!/bin/bash
+
+
+clear
+sleep 2
+echo "hello world"
+sleep 2
+echo "I am learning how to automate"
+sleep 2
+uname -r
+sleep 2
+free -m
+sleep 2
+lsblk
+sleep 2
+pwd
+sleep 2
+nproc
+
+./script.sh
+
+#!/bin/bash
+
+    #Author : Utrains
+    #Date : 01-Nov-2021
+    # modified by Serge on may 2023
+
+## ---------- script that Install some packages in Linux -----------------
+
+echo "Installing finger please wait ..."
+yum install finger -y
+echo "Installing curl .. "
+yum install curl -y
+yum install zip -y
+yum install vim -y
+
+# yum install finger curl zip vim -y
+
+
+project:
+    
+1- once in a while we need to do a complete inventory of server and this is a manual effort.
+    write a script to help automate this:
+     These are some of the things that we usually check on a machine:
+      - os version
+      - kernel version
+      - number of cpus
+      - total memory
+      - if the system is 64 bit or 32
+      - os type
+sol:
+  touch system_inv.sh
+  chmod +x system_inv.sh
+  vi system_inv.sh
+  
+  #!/bin/bash
+  
+  ## system inventory
+  
+  echo " checking the kernel version... "
+  sleep 2
+  uname -r 
+  echo " checking the memory... "
+  sleep 2
+  free -m
+  echo " checking the hard drive ... "
+  sleep 2
+  lsblk
+  echo " checking the os type and version ... "
+  sleep 2
+  cat /etc/*release
+  echo " checking the number of processor ... "
+  sleep 2
+  nproc
+  echo "inventory done successfully have a nice day!"
+  sleep 2
+  
+
+  
+2- To deploy one of the app on the server , the developer and qa team follow a document in confluence.
+    write a script to automate that.
+    
+    confluence page link and credentials to login: 
+      https://dataservicegroup.atlassian.net/l/cp/1BT00SB0
+      username: unixtteam24@gmail.com
+      password: school123
+sol:
+touch dev_deploy.sh
+chmod +x dev_deploy.sh
+vi dev_deploy.sh
+
+  
+#!/bin/bash
+
+echo "Beginning automation"
+
+yum update -y
+
+echo "Installing all packages" 
+
+yum install unzip wget httpd -y
+wget https://github.com/utrains/static-resume/archive/refs/heads/main.zip
+unzip main.zip
+rm -rf /var/www/html/*
+cp -r static-resume-main/iPortfolio/* /var/www/html/
+systemctl start httpd
+systemctl enable httpd
+echo "configurations done "
+
+
+
+3- write a script to install docker on centos 7
+
+#!/bin/bash
+
+echo "Updating the system..."
+sudo yum update -y
+sleep 2
+
+echo "Installing required packages..."
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+sleep 2
+
+echo "Adding Docker repository..."
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sleep 2
+
+echo "Installing Docker..."
+sudo yum install -y docker-ce
+sleep 2
+
+echo "Starting and enabling Docker..."
+sudo systemctl start docker
+sudo systemctl enable docker
+sleep 2
+
+echo "Adding the current user to the 'docker' group..."
+sudo usermod -aG docker $(whoami)
+sleep 2
+
+echo "Verifying Docker installation..."
+docker --version
+
+    
+4- we have below script that is used to delete logs that are 14 days old please modify it to delete 
+    log files that are  7 days old instead.
+    
+#!/bin/bash
+
+LOG_DIR="/var/log"
+DAYS_THRESHOLD=14
+
+
+find "$LOG_DIR" -type f -name "*.log" -mtime +"$DAYS_THRESHOLD" -exec rm {} \;
+
+
+5- we have below script that is used to delete logs that are 14 days old. it is deleting the
+log with extension .log within the directory /var/log can you  please  modifiy it so we can use the
+same script to delete all the .tar files 30 days older in /opt/dev/packages
+   
+#!/bin/bash
+
+LOG_DIR="/var/log"
+DAYS_THRESHOLD=14
+
+find "$LOG_DIR" -type f -name "*.log" -mtime +"$DAYS_THRESHOLD" -exec rm {} \;
+    
+6- all these scripts need to be push to the remote repository for future collaboration
+repo-name = agents-scripts.
+
+%%%%%%%%%%%%%%%%%%%% week 7 %%%%%%%%
+
+read statement
+if statement
+example:
+
+  
+
+***Project: 
+  
+  You are working in the cloud infrastructure and configuration team and as such 
+your team is working on creating a multi tiers app fully hosted on aws.
+the project is broken down into user's stories or tickets. and these tickets are in the kanban board ( jira software):
+Go ahead and login to the company aws console and solve these tickets; dont hesitate to bring up 
+any questions that you have during our morning stand up meetings.
+                 
+  
+  
+1- Create a vpc for utc app with below specs:
+    
+  - name: utc-app1
+  - Tenancy: default 
+  - NAT Gateway: no  
+  - s3 endpoint: no                            
+  - CIDR: 192.168.0.0/16
+  - enable IPV6: No                            
+  - Enable DNS hostnames: yes
+  - Enable DNS resolution: yes                            
+  - Internet Gateway name: dev-wdp-IGW
+  - Attach the Internet Gateway to the VPC
+  - two public subnets
+  - two private subnets                            
+  - tags: {
+    Name: utc-app1
+    env:  dev
+    team: wdp
+    created by: Yourname
+  }  
+ 
+2- Create a security group for utc app:
+    name: webserver-sg
+    ports: 
+      - 22 for ssh, allow just from your ip 
+      - 80 for apache, open to the world
+      - 8080 open everywhere
+    vpc: utc-app1
+      
+3- create a ssh keypair for utc app :
+    name: utc-key
+    format: .pem
+      
+  
+4- create an ec2 instance with below specs:
+    ami: ami-06a0cd9728546d178
+    hardrive / ebs: 20g 
+    security group: webserver-sg
+    enable public ip: yes
+    key_name: utc-key
+    vpc: utc-app1
+    subnet: public-subnet-1a
+    user data: 
+      #!/bin/bash
+     sudo  yum update -y
+   sudo   groupadd docker
+   sudo   useradd John -aG docker 
+   sudo   yum install git unzip wget httpd -y
+   sudo   systemctl start httpd
+   sudo   systemctl enable httpd
+   sudo   cd /opt
+   sudo   wget https://github.com/kserge2001/web-consulting/archive/refs/heads/dev.zip
+   sudo   unzip dev.zip
+   sudo   cp -r /opt/web-consulting-dev/* /var/www/html
+      
+      tags = {
+        Name: utc-dev-inst
+        Team: Cloud Transformation
+        Environment: Dev
+        Created by: your name goes here
+      }
+      
+5- testing:
+  check the vpc and subnets
+  check the keypair
+  check the security group
+  check the instance ( login and verify that user data run)
+  Take the ip address of the instance to the browser to verify content
+
+6- create an ami of your utc-dev-inst so next time we dont need to reconfigure the instance.
+call it utc-dev-inst
+  
+7- clean-up
+  terminate the instance
+  delete security group
+  delete keypair
+  delete vpc
+
+8- The Dev team need a test environment to test wordpress site functionality for that they need a 
+linux environment with wordpress installed, how can you help with this request?
+
+9- write terraform code to build the infrastructure:
+  
+  main.tf
+  
+  # provider block
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+# Create vpc
+
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+
+  name = "utc-app1"
+  cidr = "192.168.0.0/16"
+
+  azs             = ["us-east-1a", "us-east-1b"]
+  private_subnets = ["192.168.1.0/24", "192.168.2.0/24"]
+  public_subnets  = ["192.168.101.0/24", "192.168.102.0/24"]
+
+enable_nat_gateway = false
+enable_vpn_gateway = false
+enable_dns_hostnames = true
+
+
+  tags = {
+    Name: "utc-app1"
+    env:  "dev"
+    team: "wdp"
+    created-by: "serge"
+}
+}
+
+# Security group 
+
+resource "aws_security_group" "sg" {
+  name        = "webserver-sg"
+  description = "allow traffic on 22 and 80"
+  vpc_id      = module.vpc.vpc_id
+
+  ingress {
+    description      = "22 for ssh"
+    from_port        = 22
+    to_port          = 22
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+   ingress {
+    description      = "80 for http"
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    
+  }
+
+  tags = {
+    Name = "webserver-sg"
+    Team = "Devops"
+    owner = "serge"
+  }
+}
+  
+# Generate a secure key using a rsa algorithm
+resource "tls_private_key" "ec2_key" {
+  algorithm = "RSA"
+  rsa_bits  = 2048
+}
+
+# creating the keypair in aws
+resource "aws_key_pair" "ec2_key" {
+  key_name   = "terraform-key1"                 
+  public_key = tls_private_key.ec2_key.public_key_openssh 
+}
+
+# Save the .pem file locally for remote connection
+resource "local_file" "ssh_key" {
+  filename = "terraform.pem"
+  content  = tls_private_key.ec2_key.private_key_pem
+}
+
+# create the ec2 instance
+resource "aws_instance" "server" {
+  ami           = "ami-0393ee318b08f4511"
+  instance_type = "t2.micro"
+  key_name      = aws_key_pair.ec2_key.key_name
+  vpc_security_group_ids = [aws_security_group.sg.id]
+  subnet_id = module.vpc.public_subnets[0]
+  associate_public_ip_address = true
+
+  tags = {
+    Name = "Terraform-ec2-instance"
+    Env  = "dev"
+  }
+}
+
+output "ec2_ip" {
+ value =  aws_instance.server.public_ip
+}
+
+output "dns_name" {
+ value = aws_instance.server.public_dns 
+}
+
+output "vpcid" {
+ value = module.vpc.vpc_id 
+}
+
+
+%%%%%%%%%%%%%%%% Project 
+
+we have a teeraform code that is used to create couple resources in aws and our job is to turn the code
+into a module that can be used for different environment
+
+below is the terraform code: 
+  
+# provider block
+
+provider "aws" {
+  region = "us-east-1"
+}
+
+# Create vpc
+
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+
+  name = "utc-app1"
+  cidr = "192.168.0.0/16"
+
+  azs             = ["us-east-1a", "us-east-1b"]
+  private_subnets = ["192.168.1.0/24", "192.168.2.0/24"]
+  public_subnets  = ["192.168.101.0/24", "192.168.102.0/24"]
+
+enable_nat_gateway = false
+enable_vpn_gateway = false
+enable_dns_hostnames = true
+
+  tags = {
+    Name: "utc-app1"
+    env:  "dev"
+    team: "wdp"
+    created-by: "serge"
+}
+}
+
+
+# Security group 
+
+resource "aws_security_group" "sg" {
+  name        = "webserver-sg"
+  description = "allow traffic on 22 and 80"
+  vpc_id      = module.vpc.vpc_id
+
+  ingress {
+    description      = "22 for ssh"
+    from_port        = 22
+    to_port          = 22
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+   ingress {
+    description      = "80 for http"
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    
+  }
+
+  tags = {
+    Name = "webserver-sg"
+    Team = "Devops"
+    owner = "serge"
+  }
+}
+
+# Generate a secure key using a rsa algorithm
+resource "tls_private_key" "ec2_key" {
+  algorithm = "RSA"
+  rsa_bits  = 2048
+}
+
+# creating the keypair in aws
+resource "aws_key_pair" "ec2_key" {
+  key_name   = "terraform-key1"                 
+  public_key = tls_private_key.ec2_key.public_key_openssh 
+}
+
+# Save the .pem file locally for remote connection
+resource "local_file" "ssh_key" {
+  filename = "terraform.pem"
+  content  = tls_private_key.ec2_key.private_key_pem
+}
+
+# create the ec2 instance
+resource "aws_instance" "server" {
+  ami           = "ami-0393ee318b08f4511"
+  instance_type = "t2.micro"
+  key_name      = aws_key_pair.ec2_key.key_name
+  vpc_security_group_ids = [aws_security_group.sg.id]
+  subnet_id = module.vpc.public_subnets[0]
+  associate_public_ip_address = true
+
+  tags = {
+    Name = "Terraform-ec2-instance"
+    Env  = "dev"
+  }
+}
+
+output "ec2_ip" {
+ value =  aws_instance.server.public_ip
+}
+
+output "dns_name" {
+ value = aws_instance.server.public_dns 
+}
+
+output "vpcid" {
+ value = module.vpc.vpc_id 
+}
+
+solution:
+  
+  
+  create a version.tf for our rovider 
+  
+  # provider block
+
+provider "aws" {
+  region = var.region
+}
+
+create a variables.tf file for all the variables
+
+variable "region" {
+    description = "this is the region"
+    default = "us-east-1"
+  
+}
+#Vpc variable
+variable "vpc_name" {
+    default = "my-vpc"
+  
+}
+variable "cblock" {
+    default = "10.0.0.0/16"
+  
+# Security group vars
+
+variable "sg_name" {
+    default = "Web-sg-dev"
+}  
+  
+create sg.tf for security group 
+  
+  # Security group 
+
+resource "aws_security_group" "sg" {
+  name        = var.sg_name
+  description = "allow traffic on 22 and 80"
+  vpc_id      = module.vpc.vpc_id
+
+  ingress {
+    description      = "22 for ssh"
+    from_port        = 22
+    to_port          = 22
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+   ingress {
+    description      = "80 for http"
+    from_port        = 80
+    to_port          = 80
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
+   
+  }
+
+  egress {
+    from_port        = 0
+    to_port          = 0
+    protocol         = "-1"
+    cidr_blocks      = ["0.0.0.0/0"]
+    
+  }
+
+  tags = {
+    Name = "webserver-sg"
+    Team = "Devops"
+    owner = "serge"
+  }
+}
+
+# Generate a secure key using a rsa algorithm
+resource "tls_private_key" "ec2_key" {
+  algorithm = "RSA"
+  rsa_bits  = 2048
+}
